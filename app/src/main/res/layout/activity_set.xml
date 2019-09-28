@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="technnoaddict.goodnight.Set">
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/min"
+        android:layout_marginEnd="28dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/sec"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/gobtn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Minutes"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/min"
+        android:layout_alignStart="@+id/instructtext"
+        android:layout_marginStart="53dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Seconds"
+        android:id="@+id/textView"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/instructtext"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginStart="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/milisecs"
+        android:visibility="invisible"
+        android:layout_below="@+id/min"
+        android:layout_alignStart="@+id/min"
+        android:layout_marginTop="59dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO !"
+        android:background="@drawable/shape"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:id="@+id/gobtn"
+        android:layout_alignBottom="@+id/milisecs"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/intervaltext"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:padding="25dp"
+        android:background="@drawable/shapet"
+        android:text="&quot; I want to sleep after &quot;"
+        android:id="@+id/instructtext"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp" />
+
+
+</RelativeLayout>
